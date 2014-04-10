@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>AISD zadanie 6</TITLE>
+	<META NAME="GENERATOR" CONTENT="OpenOffice.org 3.0  (Unix)">
+	<META NAME="AUTHOR" CONTENT="PC">
+	<META NAME="CREATED" CONTENT="0;0">
+	<META NAME="CHANGED" CONTENT="20091218;1335300">
+	<META NAME="Info 1" CONTENT="">
+	<META NAME="Info 2" CONTENT="">
+	<META NAME="Info 3" CONTENT="">
+	<META NAME="Info 4" CONTENT="">
+	<STYLE TYPE="text/css">
+	<!--
+		@page { margin-left: 2cm; margin-right: 2.45cm; margin-top: 1.5cm; margin-bottom: 1.5cm }
+		P { margin-bottom: 0.21cm; direction: ltr; color: #000000; text-align: left; widows: 2; orphans: 2 }
+		P.western { font-family: "Times New Roman", serif; font-size: 12pt; so-language: pl-PL }
+		P.cjk { font-family: "Times New Roman", serif; font-size: 12pt }
+		P.ctl { font-family: "Times New Roman", serif; font-size: 12pt; so-language: ar-SA }
+	-->
+	</STYLE>
+</HEAD>
+<BODY LANG="de-DE" TEXT="#000000" DIR="LTR">
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><B>AISDI zadanie GRAF</B></FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif">Proszę napisać program, który:</FONT></P>
+<OL>
+	<LI><P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+	<FONT FACE="Arial, sans-serif">wczyta ze standardowego wejścia graf
+	nieskierowany</FONT></P>
+	<LI><P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+	<FONT FACE="Arial, sans-serif">wyszuka wszystkie pary węzłów dla
+	których usunięcie łączącej je krawędzi spowoduje podział
+	grafu na dwa rozdzielne grafy..</FONT></P>
+	<LI><P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+	<FONT FACE="Arial, sans-serif">dla każdej pary węzłów </FONT>
+	</P>
+	<OL>
+		<LI><P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+		<FONT FACE="Arial, sans-serif">wypisze znalezioną parę węzłów
+		na standardowe wyjście</FONT></P>
+		<LI><P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+		<FONT FACE="Arial, sans-serif">wypisze długość krawędzi
+		łączącej węzły na standardowe wyjście</FONT></P>
+	</OL>
+</OL>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif">Dla wszystkich danych ułamkowych
+separatorem dziesiętnym jest '.' (kropka).</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><B>Wejście</B></FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif">W pierwszej sekcji znajduje się <I>v</I>
+linii z dwoma liczbami rzeczywistymi oznaczającymi współrzędne x
+oraz y kolejnych wierzchołków. </FONT>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif">Po pierwszej sekcji następuje druga
+sekcja, w której znajduje się <I>e</I> linii z dwoma całkowitymi
+liczbami nieujemnymi oraz jedna nieujemną liczbą rzeczywistą
+oznaczającymi: nr wierzchołka początkowego, końcowego oraz wagę
+krawędzi.</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif">Liczby <I>v</I>, <I>e</I> należą do
+zbioru liczb naturalnych.</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><B>Wyjście standardowe</B></FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif">Wyjście ma zawierać <I>n</I> linii
+(dla każdej pary wierzchołków jedna linia). </FONT>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif">Każda linia składa się z dwu
+nieujemnych liczb całkowitych i dwu nieujemnych liczb rzeczywistych
+oddzielonych pojedynczym znakiem <I>spacji</I>. Pierwsze dwie liczby
+to nr wierzchołka początkowego i końcowego znalezionej pary,
+trzecia liczba to długość krawędzi, czwarta odległość
+geometryczna pomiędzy wierzchołkami.</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><B>Przykład</B>:</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><B>Dane wejściowe (cin):</B></FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Courier New, monospace">0.2 0.1</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Courier New, monospace">1.2 0.2</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Courier New, monospace">1.2 1.1</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Courier New, monospace">0.2 1.1</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Courier New, monospace">1 0 12.3</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Courier New, monospace">0 2 10</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Courier New, monospace">1 2 2.4</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Courier New, monospace">2 3 1.1</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Arial, sans-serif"><B>Dane wyjściowe (cout):</B></FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<FONT FACE="Courier New, monospace">2 3 1.1 1.0</FONT></P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+<P LANG="pl-PL" CLASS="western" ALIGN=JUSTIFY STYLE="margin-bottom: 0cm">
+<BR>
+</P>
+</BODY>
+</HTML>
